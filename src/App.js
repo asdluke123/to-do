@@ -21,7 +21,7 @@ function App() {
       />
       <Route
         path="/list"
-        element={<List userToDos={userToDos} setUserData={setUserData} />}
+        element={<List userToDos={userToDos} setUserData={setUserData}/>}
       />
     </Routes>
   );
