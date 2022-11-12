@@ -57,8 +57,6 @@ const List = ({ setUserData, userToDos }) => {
         <div className="top">
           <SearchBar
             setSearching={setSearching}
-            search={search}
-            setIsSearching={setIsSearching}
           />
           <Button
             variant="contained"

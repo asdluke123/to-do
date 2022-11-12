@@ -26,6 +26,7 @@ const Todo = ({ todo, index, saveEdit, updateToDo, deleteToDo }) => {
               setValidEdit(e.target.value.length > 0);
               setNewToDo(e.target.value);
             }}
+            autoFocus="true"
             value={newToDo}
             placeholder="Enter To Do"
             maxLength={25}

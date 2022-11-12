@@ -139,6 +139,7 @@ nav a:hover {
 .todo-edit-input {
   margin-left: 10px;
   font-size: 20px;
+  padding-left: 10px;
 }
 .todo {
   display: flex;
