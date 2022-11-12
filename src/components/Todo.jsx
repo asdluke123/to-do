@@ -4,7 +4,7 @@ import { Button } from "@mui/material";
 import EditIcon from "@mui/icons-material/Edit";
 import DeleteIcon from "@mui/icons-material/Delete";
 const Todo = ({ todo, index, saveEdit, updateToDo, deleteToDo }) => {
-  const [newToDo, setNewToDo] = useState(todo.name);
+  const [newToDo, setNewToDo] = useState("");
   const [validEdit, setValidEdit] = useState(true);
 
   const checkValidEdit = () => {
@@ -14,6 +14,7 @@ const Todo = ({ todo, index, saveEdit, updateToDo, deleteToDo }) => {
       setNewToDo("");
     } else {
       setValidEdit(false);
+      setNewToDo("");
     }
   };
   return (
@@ -26,9 +27,9 @@ const Todo = ({ todo, index, saveEdit, updateToDo, deleteToDo }) => {
               setValidEdit(e.target.value.length > 0);
               setNewToDo(e.target.value);
             }}
-            autoFocus="true"
+            autoFocus={true}
             value={newToDo}
-            placeholder="Enter To Do"
+            placeholder="Enter New To Do"
             maxLength={25}
             className="todo-edit-input"
           ></input>

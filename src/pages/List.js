@@ -43,10 +43,7 @@ const List = ({ setUserData, userToDos }) => {
   };
   const setSearching = (value) => {
     if (value) {
-      setIsSearching(true);
       setSearch(value);
-    } else {
-      setIsSearching(false);
     }
   };
   return (
@@ -57,6 +54,7 @@ const List = ({ setUserData, userToDos }) => {
         <div className="top">
           <SearchBar
             setSearching={setSearching}
+            setIsSearching={setIsSearching}
           />
           <Button
             variant="contained"
